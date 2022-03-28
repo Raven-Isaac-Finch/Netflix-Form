@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Form</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/netflix.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&family=Sriracha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="form-container">
+        <h1>NETFLIX</h1>
+        <h3>Thank you for signing up! Tell us more about yourself.</h3>
+        <form action="#!" id="form-self" target="_blank">
+            <div class="box-container">
+                <label for="username-box" class="box-titles">Name</label> <br>
+                <input type="text" id="username-box" placeholder="Enter Your Name" required>
+            </div>
+            <div class="box-container">
+                <label for="age-box" class="box-titles">Age</label> <br>
+                <input type="number" id="age-box" placeholder="Age" min="18" max="99" required>
+            </div>
+            <div class="box-container">
+                <label for="email-box" class="box-titles">E-mail</label> <br>
+                <input type="email" id="email-box" placeholder="Enter Your E-mail" required>
+            </div>
+            <div class="box-container">
+                <label class="box-titles">Favorite Content</label> <br>
+                <select name="content" id="dropdown">
+                    <option value="Movie">Movie</option>
+                    <option value="Series">Series</option>
+                    <option value="Anime">Anime</option>
+                    <option value="Documentary">Documentary</option>
+                </select>
+            </div>
+            <div class="box-container">
+                <label class="box-titles">Prefered Language</label> <br>
+                <select name="language" id="dropdown">
+                    <option value="English">English</option>
+                    <option value="Turkish">Turkish</option>
+                    <option value="French">French</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="box-container">
+                <label class="box-titles">Favorite Genre</label> <br>
+                <input type="checkbox" id="first-box" value="Comedy">
+                <label for="first-box" class="option-title">Comedy</label> <br>
+
+                <input type="checkbox" id="second-box" value="Action">
+                <label for="second-box" class="option-title">Action</label> <br>
+
+                <input type="checkbox" id="third-box" value="Romance">
+                <label for="third-box" class="option-title">Romance</label> <br>
+
+                <input type="checkbox" id="fourth-box" value="Other">
+                <label for="fourth-box" class="option-title">Other</label>
+            </div>
+            <div class="box-container">
+                <label class="box-titles">Gender</label> <br>
+                <input type="radio" name="gender" id="first-radio" value="male" checked>
+                <label for="first-radio" class="option-title">Male</label> <br>
+
+                <input type="radio" name="gender" id="second-radio" value="female">
+                <label for="second-radio" class="option-title">Female</label> <br>
+
+                <input type="radio" name="gender" id="third-radio" value="other">
+                <label for="third-radio" class="option-title">Other</label>
+            </div>
+            <div class="box-container">
+                <label class="box-titles">Feedback</label> <br>
+                <textarea name="message" id="feedback" cols="30" rows="10" placeholder="Tell Us What You Think" style="resize: none;"></textarea>
+            </div>
+            <div id="btn-container">
+                <input type="submit" id="submit" value="Send">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
